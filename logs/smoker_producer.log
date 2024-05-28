@@ -1,0 +1,13 @@
+2024-05-28 15:00:09,220.smoker_producer.INFO ==================================================
+2024-05-28 15:00:09,220.smoker_producer.INFO Today is 2024-05-28 at 03:00 PM
+2024-05-28 15:00:09,221.smoker_producer.INFO Running on: nt Windows 10
+2024-05-28 15:00:09,221.smoker_producer.INFO Python version:  3.11.9
+2024-05-28 15:00:09,222.smoker_producer.INFO Python path: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0
+2024-05-28 15:00:09,222.smoker_producer.INFO Working dir: C:\Users\bambe\OneDrive\Documents\NMSU\44671_StreamingData\Module_5\44671_streaming-05-smart-smoker
+2024-05-28 15:00:09,223.smoker_producer.INFO ==================================================
+2024-05-28 15:00:09,248.smoker_producer.INFO Queue '01-smoker' declared.
+2024-05-28 15:00:09,255.smoker_producer.INFO Queue '02-food-A' declared.
+2024-05-28 15:00:09,262.smoker_producer.INFO Queue '03-food-B' declared.
+2024-05-28 15:00:09,268.smoker_producer.INFO  [x] Sent 'Time: 05/22/21 12:20:15, Channel1: 84.2' to queue '01-smoker'.
+2024-05-28 15:00:09,269.smoker_producer.WARNING Empty temperature value for Channel2 at timestamp 05/22/21 12:20:15. Skipping.
+2024-05-28 15:00:09,270.smoker_producer.WARNING Empty temperature value for Channel3 at timestamp 05/22/21 12:20:15. Skipping.
