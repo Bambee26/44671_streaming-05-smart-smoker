@@ -1,0 +1,13 @@
+2024-05-28 14:58:31,136.smoker_emitter_of_tasks.INFO ==================================================
+2024-05-28 14:58:31,136.smoker_emitter_of_tasks.INFO Today is 2024-05-28 at 02:58 PM
+2024-05-28 14:58:31,136.smoker_emitter_of_tasks.INFO Running on: nt Windows 10
+2024-05-28 14:58:31,137.smoker_emitter_of_tasks.INFO Python version:  3.11.9
+2024-05-28 14:58:31,137.smoker_emitter_of_tasks.INFO Python path: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0
+2024-05-28 14:58:31,137.smoker_emitter_of_tasks.INFO Working dir: C:\Users\bambe\OneDrive\Documents\NMSU\44671_StreamingData\Module_5\44671_streaming-05-smart-smoker
+2024-05-28 14:58:31,137.smoker_emitter_of_tasks.INFO ==================================================
+2024-05-28 14:58:31,164.smoker_emitter_of_tasks.INFO Queue '01-smoker' declared.
+2024-05-28 14:58:31,170.smoker_emitter_of_tasks.INFO Queue '02-food-A' declared.
+2024-05-28 14:58:31,184.smoker_emitter_of_tasks.INFO Queue '03-food-B' declared.
+2024-05-28 14:58:31,212.smoker_emitter_of_tasks.INFO  [x] Sent 'Time: 05/22/21 12:20:15, Channel1: 84.2' to queue '01-smoker'.
+2024-05-28 14:58:31,215.smoker_emitter_of_tasks.WARNING Empty temperature value for Channel2 at timestamp 05/22/21 12:20:15. Skipping.
+2024-05-28 14:58:31,217.smoker_emitter_of_tasks.WARNING Empty temperature value for Channel3 at timestamp 05/22/21 12:20:15. Skipping.
