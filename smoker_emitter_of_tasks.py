@@ -17,14 +17,6 @@ from util_logger import setup_logger
 
 logger, logname = setup_logger(__file__)
 
-def offer_rabbitmq_admin_site():
-    """Offer to open the RabbitMQ Admin website"""
-    ans = input("Would you like to monitor RabbitMQ queues? y or n ")
-    print()
-    if ans.lower() == "y":
-        webbrowser.open_new("http://localhost:15672/#/queues")
-        logger.info("Opened RabbitMQ")
-
 def send_message(host: str, queue_name: str, message: str):
     """
     Creates and sends a message to the queue each execution.
@@ -58,12 +50,12 @@ def send_message(host: str, queue_name: str, message: str):
         # close the connection to the server
         conn.close()
 
-# Read tasks from csv and send to RabbitMQ server
-def read_and_send_tasks_from_csv(file_path: str, host: str, queue_name: str):
+# Read smoker temps from csv and send to RabbitMQ server
+def read_and_send_smoker_temps_from_csv(file_path: str, host: str, queue_name: str):
     with open(file_path, newline='') as csvfile:
-        reader = csv.reader(csvfile)
+        reader = csv.DictReader(csvfile)
         for row in reader: 
-            message = " ".join(row)
+            message = f"Time: {row['Time (UTC)']}, Channel1: {row['Channel1']}, Channel2: {row['Channel2']}, Channel3: {row['Channel3']}"
             send_message(host, queue_name, message)
 
 # Standard Python idiom to indicate main program entry point
@@ -71,10 +63,7 @@ def read_and_send_tasks_from_csv(file_path: str, host: str, queue_name: str):
 # without executing the code below.
 # If this is the program being run, then execute the code below
 if __name__ == "__main__":  
-    # ask the user if they'd like to open the RabbitMQ Admin site
-    offer_rabbitmq_admin_site()
-    file_name = 'tasks.csv'
+    file_name = 'smoker-temps.csv'  # Change file name to smoker-temps.csv
     host = "localhost"
-    queue_name = "task_queue3"
-    read_and_send_tasks_from_csv(file_name, host, queue_name)
-  
+    queue_name = "smoker_temps_queue"  # Change queue name if needed
+    read_and_send_smoker_temps_from_csv(file_name, host, queue_name)
