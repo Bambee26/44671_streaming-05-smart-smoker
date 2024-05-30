@@ -53,8 +53,8 @@ def read_and_send_smoker_temps_from_csv(file_path: str, host: str, queues: list)
                     except ValueError as e:
                         logger.error(f"Error converting temperature value to float: {e}")
                 else:
-                    logger.warning(f"Empty temperature value for Channel{index} at timestamp {timestamp}. Skipping.")
-            time.sleep(30)  # Sleep for 30 seconds before sending the next message
+                    logger.warning(f"Empty temperature value for {index} at {timestamp}. Skipping.")
+            time.sleep(10)  # Sleep for 30 seconds before sending the next message
 
 
 def send_message(host: str, queue_name: str, message: str):
@@ -76,7 +76,7 @@ def send_message(host: str, queue_name: str, message: str):
 if __name__ == "__main__":  
     file_name = 'smoker-temps.csv'
     host = "localhost"
-    queues = ["01-smoker", "02-food-A", "03-food-B"]
+    queues = ["01-smoker-temp", "02-roast-temp", "03-ribs-temp"]
     connection, channel = connect_rabbitmq()
     create_and_declare_queues(channel, queues)
     read_and_send_smoker_temps_from_csv(file_name, host, queues)
