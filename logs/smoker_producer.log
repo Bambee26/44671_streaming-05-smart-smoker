@@ -1,40 +1,16 @@
-2024-05-30 13:36:25,038.smoker_producer.INFO ==================================================
-2024-05-30 13:36:25,038.smoker_producer.INFO Today is 2024-05-30 at 01:36 PM
-2024-05-30 13:36:25,039.smoker_producer.INFO Running on: nt Windows 10
-2024-05-30 13:36:25,039.smoker_producer.INFO Python version:  3.11.9
-2024-05-30 13:36:25,039.smoker_producer.INFO Python path: C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0
-2024-05-30 13:36:25,040.smoker_producer.INFO Working dir: C:\Users\bambe\OneDrive\Documents\NMSU\44671_StreamingData\Module_5\44671_streaming-05-smart-smoker
-2024-05-30 13:36:25,040.smoker_producer.INFO ==================================================
-2024-05-30 13:36:25,061.smoker_producer.INFO Queue '01-smoker-temp' declared.
-2024-05-30 13:36:25,068.smoker_producer.INFO Queue '02-roast-temp' declared.
-2024-05-30 13:36:25,075.smoker_producer.INFO Queue '03-ribs-temp' declared.
-2024-05-30 13:36:25,082.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:20, Channel1: 84.2' to queue '01-smoker-temp'.
-2024-05-30 13:36:25,088.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:20, Channel2: 60.2' to queue '02-roast-temp'.
-2024-05-30 13:36:25,096.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:20, Channel3: 56.1' to queue '03-ribs-temp'.
-2024-05-30 13:36:35,106.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:20, Channel1: 84.2' to queue '01-smoker-temp'.
-2024-05-30 13:36:35,113.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:20, Channel2: 60.2' to queue '02-roast-temp'.
-2024-05-30 13:36:35,129.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:20, Channel3: 56.2' to queue '03-ribs-temp'.
-2024-05-30 13:36:45,150.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:21, Channel1: 87.6' to queue '01-smoker-temp'.
-2024-05-30 13:36:45,157.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:21, Channel2: 60.3' to queue '02-roast-temp'.
-2024-05-30 13:36:45,168.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:21, Channel3: 56.2' to queue '03-ribs-temp'.
-2024-05-30 13:36:55,179.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:21, Channel1: 87.6' to queue '01-smoker-temp'.
-2024-05-30 13:36:55,185.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:21, Channel2: 60.3' to queue '02-roast-temp'.
-2024-05-30 13:36:55,194.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:21, Channel3: 56.4' to queue '03-ribs-temp'.
-2024-05-30 13:37:05,207.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:22, Channel1: 86.3' to queue '01-smoker-temp'.
-2024-05-30 13:37:05,213.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:22, Channel2: 60.4' to queue '02-roast-temp'.
-2024-05-30 13:37:05,221.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:22, Channel3: 56.5' to queue '03-ribs-temp'.
-2024-05-30 13:37:15,230.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:22, Channel1: 86.3' to queue '01-smoker-temp'.
-2024-05-30 13:37:15,239.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:22, Channel2: 60.5' to queue '02-roast-temp'.
-2024-05-30 13:37:15,246.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:22, Channel3: 56.5' to queue '03-ribs-temp'.
-2024-05-30 13:37:25,256.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:23, Channel1: 92.0' to queue '01-smoker-temp'.
-2024-05-30 13:37:25,266.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:23, Channel2: 60.5' to queue '02-roast-temp'.
-2024-05-30 13:37:25,273.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:23, Channel3: 56.6' to queue '03-ribs-temp'.
-2024-05-30 13:37:35,285.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:23, Channel1: 92.0' to queue '01-smoker-temp'.
-2024-05-30 13:37:35,296.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:23, Channel2: 60.6' to queue '02-roast-temp'.
-2024-05-30 13:37:35,304.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:23, Channel3: 56.7' to queue '03-ribs-temp'.
-2024-05-30 13:37:45,312.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:24, Channel1: 96.8' to queue '01-smoker-temp'.
-2024-05-30 13:37:45,318.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:24, Channel2: 60.6' to queue '02-roast-temp'.
-2024-05-30 13:37:45,329.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:24, Channel3: 56.8' to queue '03-ribs-temp'.
-2024-05-30 13:37:55,352.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:24, Channel1: 96.8' to queue '01-smoker-temp'.
-2024-05-30 13:37:55,386.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:24, Channel2: 60.7' to queue '02-roast-temp'.
-2024-05-30 13:37:55,397.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:24, Channel3: 56.9' to queue '03-ribs-temp'.
+2024-05-30 13:46:42,031.smoker_producer.INFO ==================================================
+2024-05-30 13:46:42,032.smoker_producer.INFO Today is 2024-05-30 at 01:46 PM
+2024-05-30 13:46:42,032.smoker_producer.INFO Running on: nt Windows 10
+2024-05-30 13:46:42,032.smoker_producer.INFO Python version:  3.11.9
+2024-05-30 13:46:42,033.smoker_producer.INFO Python path: C:\Users\bambe\OneDrive\Documents\NMSU\44671_StreamingData\Module_5\44671_streaming-05-smart-smoker\.venv
+2024-05-30 13:46:42,033.smoker_producer.INFO Working dir: C:\Users\bambe\OneDrive\Documents\NMSU\44671_StreamingData\Module_5\44671_streaming-05-smart-smoker
+2024-05-30 13:46:42,033.smoker_producer.INFO ==================================================
+2024-05-30 13:46:42,069.smoker_producer.INFO Queue '01-smoker-temp' declared.
+2024-05-30 13:46:42,095.smoker_producer.INFO Queue '02-roast-temp' declared.
+2024-05-30 13:46:42,115.smoker_producer.INFO Queue '03-ribs-temp' declared.
+2024-05-30 13:46:42,132.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:20, Channel1: 84.2' to queue '01-smoker-temp'.
+2024-05-30 13:46:42,141.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:20, Channel2: 60.2' to queue '02-roast-temp'.
+2024-05-30 13:46:42,151.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:20, Channel3: 56.1' to queue '03-ribs-temp'.
+2024-05-30 13:46:52,186.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:20, Channel1: 84.2' to queue '01-smoker-temp'.
+2024-05-30 13:46:52,193.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:20, Channel2: 60.2' to queue '02-roast-temp'.
+2024-05-30 13:46:52,201.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 12:20, Channel3: 56.2' to queue '03-ribs-temp'.
