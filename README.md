@@ -2,32 +2,27 @@
 ## CSIS 44671 - Module 5
 
 
-# streaming-04-multiple-consumers
+# streaming-05-smart-smoker
 
-> Use RabbitMQ to distribute tasks to multiple workers
+>Using RabbitMQ we will stream info from a smart smoker. Read one value every half minute. (sleep_secs = 30)
 
-One process will create task messages. Multiple worker processes will share the work. 
+smoker-temps.csv has 4 columns:
 
+[0] Time = Date-time stamp for the sensor reading
+[1] Channel1 = Smoker Temp --> send to message queue "01-smoker"
+[2] Channel2 = Food A Temp --> send to message queue "02-food-A"
+[3] Channel3 = Food B Temp --> send to message queue "03-food-B"
 
-## Before You Begin ✔️
+## Before You Begin 
 
-1. Fork [this starter repo](https://github.com/denisecase/streaming-04-multiple-consumers) into your GitHub.
-1. Clone your repo down to your machine.
-1. View / Command Palette - then Python: Select Interpreter
-1. Select your conda environment. 
+1. In GitHub, create a new repo for your project - name it streaming-05-smart-smoker
+2. Add a README.md during the creation process. (If not, you can always add it later.)
+3. Clone your repo down to your machine. 
+4. In VS Code, add a .gitignore (use one from an earlier module), start working on the README.md. Create it if you didn't earlier.
+5. Add the csv data file to your repo. 
+6. Create a file for your bbq producer.
 
-## Read ✔️
-
-1. Read the [RabbitMQ Tutorial - Work Queues](https://www.rabbitmq.com/tutorials/tutorial-two-python.html)
-1. Read the code and comments in this repo.
-
-## RabbitMQ Admin ✔️
-
-RabbitMQ comes with an admin panel. When you run the task emitter, reply y to open it. 
-
-(Python makes it easy to open a web page - see the code to learn how.)
-
-## Create a Python Virtual Environment ✔️
+## Create a Python Virtual Environment
 
 We will create a local Python virtual environment to isolate our project's third-party dependencies from other projects.
 
@@ -40,19 +35,17 @@ In the same VS Code terminal window, activate the virtual environment.
 
 - On Windows, run: `.venv\Scripts\activate`
 
-## Execute the Producer ✔️
+## Create and implement the Producer 
 
-1. In the VS Code terminal, run v3_emitter_of_tasks.py (say y to monitor RabbitMQ queues)
-
-
-## Execute a Consumer / Worker ✔️
-
-1. Oopen two separate terminals or command prompts. In two separate terminals, run 
-
-python v3_listening_worker.py
-
-You should see the two terminals alternating tasks based on the resources being used (.... takes longer than ...)
-
+1. Implement your bbq producer. More detailed help provided in links below. 
+2. Use the logic, approach, and structure from Module 4, version 2 and version 3.
+3. These provide a current and solid foundation for streaming analytics - modifying them to serve your purpose IS part of the assignment.
+4. Do not start from scratch - do not search for code - do not use a notebook.
+5. Use comments in the code and repo to explain your work. 
+6. Use docstring comments and add your name and date to your README and your code files. 
+7. Explain your project in the README. Include prerequisites and how to run your code. 
+8. Document your project works - display screenshots of your console and maybe the RabbitMQ console. 
+9. If you only have a producer, you won't have a consumer showing messages yet, so you'll need to be creative. We'll build the consumers next.
 
 ## Reference ✔️
 
@@ -61,5 +54,4 @@ You should see the two terminals alternating tasks based on the resources being 
 
 ## Screenshot ✔️
 
-See a running example with at least 3 concurrent process windows here:
-![alt text](image.png)
+Show a example of your producer here:
