@@ -56,3 +56,4 @@ In the same VS Code terminal window, activate the virtual environment.
 
 Show a example of your producer here:
 ![alt text](image.png)
+![alt text](image-1.png)

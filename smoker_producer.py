@@ -1,16 +1,8 @@
-"""
-    This program sends a message to a queue on the RabbitMQ server.
-    Make tasks harder/longer-running by adding dots at the end of the message.
-
-    Author: Bambee Garfield
-    Date: May 1st, 2024
-
-"""
-
 import pika
 import sys
 import csv
 import time
+import webbrowser  # Import webbrowser module for opening URLs
 
 # Configure Logging
 from util_logger import setup_logger
@@ -54,8 +46,10 @@ def read_and_send_smoker_temps_from_csv(file_path: str, host: str, queues: list)
                         logger.error(f"Error converting temperature value to float: {e}")
                 else:
                     logger.warning(f"Empty temperature value for {index} at {timestamp}. Skipping.")
-            time.sleep(30)  # Sleep for 30 seconds before sending the next message
+            time.sleep(10)  # Sleep for 30 seconds before sending the next message
 
+    # Offer to open the RabbitMQ Admin website
+    offer_rabbitmq_admin_site()
 
 def send_message(host: str, queue_name: str, message: str):
     """Send a message to the RabbitMQ queue."""
@@ -68,6 +62,14 @@ def send_message(host: str, queue_name: str, message: str):
         logger.error(f"The error says: {e}")
     finally:
         connection.close()
+
+def offer_rabbitmq_admin_site():
+    """Offer to open the RabbitMQ Admin website."""
+    ans = input("Would you like to monitor RabbitMQ queues? y or n ")
+    print()
+    if ans.lower() == "y":
+        webbrowser.open_new("http://localhost:15672/#/queues")
+        logger.info("Opened RabbitMQ Admin website.")
 
 # Standard Python idiom to indicate main program entry point
 # This allows us to import this module and use its functions
