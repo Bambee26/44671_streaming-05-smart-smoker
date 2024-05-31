@@ -311,3 +311,9 @@
 2024-05-31 10:58:04,311.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 13:09, Channel1: 166.7' to queue '01-smoker-temp'.
 2024-05-31 10:58:04,323.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 13:09, Channel2: 66.2' to queue '02-roast-temp'.
 2024-05-31 10:58:04,334.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 13:09, Channel3: 65.0' to queue '03-ribs-temp'.
+2024-05-31 10:58:14,344.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 13:09, Channel1: 166.7' to queue '01-smoker-temp'.
+2024-05-31 10:58:14,350.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 13:09, Channel2: 66.2' to queue '02-roast-temp'.
+2024-05-31 10:58:14,356.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 13:09, Channel3: 65.0' to queue '03-ribs-temp'.
+2024-05-31 10:58:24,366.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 13:10, Channel1: 167.8' to queue '01-smoker-temp'.
+2024-05-31 10:58:24,370.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 13:10, Channel2: 66.3' to queue '02-roast-temp'.
+2024-05-31 10:58:24,379.smoker_producer.INFO  [x] Sent 'Time: 5/22/2024 13:10, Channel3: 65.1' to queue '03-ribs-temp'.
